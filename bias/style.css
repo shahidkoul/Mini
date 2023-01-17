@@ -1,0 +1,168 @@
+.topnav
+{
+  margin: 10px;
+  alignment: bottom;
+  justify-content: center;
+
+}
+.topnav a {
+  float: left;
+  color: #ff6f61;
+  text-align: center;
+  padding:10px 8px;
+  text-decoration: none;
+  font-size: 17px;
+  transition: width 3s;
+}
+.topnav a:hover
+{
+  background-color: aliceblue;
+  color: cornflowerblue;
+  border-radius: 30px;
+  transition-timing-function: ease-out;
+  height: 20px;
+
+}
+.Intro
+{
+  text-align:center;
+
+  padding: 150px;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+
+
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 20px;
+
+}
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+.socialnav a
+{
+  float: right;
+  color: deepskyblue;
+  text-align: justify;
+  padding:10px 8px;
+  text-decoration: none;
+  font-size: 17px;
+  text-align: center;
+
+
+}
+.socialnav a:hover
+{
+  background-color: aliceblue;
+  color: burlywood;
+  border-radius: 30px;
+
+  height: 20px;
+}
+
+
+.topnav a.logo
+{
+
+  float: start;
+
+  text-align: justify;
+  padding:1px 8px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+@media screen and (max-width: 500px) {
+  .topnav a ,.socialnav a {
+    float: none;
+    display: block;
+  }
+}
+
+
+
+.topnav a.logo:hover
+{
+background-color: mintcream;
+}
+
+
+
+body
+{
+  background-color: lemonchiffon;
+  font-family: "Cascadia Mono",Verdana;
+
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+.column {
+  float: left;
+  width: 30.3%;
+  margin-bottom: 20px;
+  padding: 0 8px;
+}
+.container {
+  padding: 0 14px;
+}
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+button
+{
+  text-decoration: none;
+  border-radius: 60px;
+  border: #ff1361 2px;
+  font-family: "Cascadia Mono", Verdana;
+  background-color: #212121;
+  color: white;
+  padding: 1em 2em;
+  letter-spacing: 0.1em;
+  display: block;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  --hover-shadows: 10px 10px 24px gray,
+  -10px -10px 24px mintcream;
+  --accent:  #bbd0c9;
+}
+
+.read
+{
+  text-decoration: none;
+}
+button:active {
+  box-shadow: var(--hover-shadows),
+  var(--accent) 0px 0px 30px 5px;
+  background-color: var(--accent);
+  transform: scale(0.9);
+  color: #212121;
+}
+
+
